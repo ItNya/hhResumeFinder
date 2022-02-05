@@ -1,4 +1,4 @@
-from HHru import *
+from finder import *
 import json
 from os import path
 from pathlib import Path
