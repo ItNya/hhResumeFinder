@@ -21,7 +21,7 @@ from aiogram.types import ParseMode
 from aiogram.utils import executor
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
-bot = Bot(token='1969692948:AAED4IUekHGSxeLcdvNBMyc552FUtEeQF3s')
+bot = Bot(token='')
 
 dp = Dispatcher(bot, storage=MemoryStorage())
 logging.basicConfig(level=logging.INFO)
