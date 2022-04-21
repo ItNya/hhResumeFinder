@@ -1,4 +1,4 @@
-from finder import *
+from HHru import *
 import json
 from os import path
 from pathlib import Path
@@ -33,6 +33,16 @@ class Form(StatesGroup): # ячейка в которой сохроняются
     gender = State()
     zp_ot = State()
     zp_do = State()
+
+
+@dp.message_handler(commands="help")
+async def cmd_test1(message: types.Message):
+    await message.answer('--СПРАВКА ДЛЯ ПОЛЬЗОВАТЕЛЯ--\n'
+                         '|для того чтобы начать поиск введите команду /start|'
+                         '\nДалее вам будет предложено ввести местность, професию , опыт работы и пол сотрудника\
+                         nПосле ввода данных начнётся поиск.\n'
+                         'PS:Приятного пользования\n'
+                         'Так как данный поисковой бот создан не проффесионалами возможны ошибки.')
 
 
 @dp.message_handler(commands="start")
